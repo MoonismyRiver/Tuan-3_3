@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In đảo ngược</title>
+</head>
+<body>
+<script>
+    let length = +prompt("nhập số phần tử trong mảng : ");
+    let a = [];
+    for (let i = 0; i < length; i++) {
+        a[i] = prompt("nhập phần tử thứ " + (i + 1) + ':');
+    }
+    document.write("mảng cũ là : "+a+'<br>'+'mảng mới là : ');
+    a.reverse();
+    for (let i = 0; i < length; i++) {
+        document.write(a[i]);
+    }
+
+</script>
+</body>
+</html>
