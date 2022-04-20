@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = new Array(10);
+    for (let i = 0; i < 10; i++) {
+        a[i] = prompt("nhập phần tử thứ " + (i + 1) + ':');
+    }
+    let x = prompt("nhập số cần xóa trong dãy trên:");
+    let a2 = [];
+    for (let i = 0; i < 10; i++) {
+        if (a[i] == x) {
+            i++;
+        } else {
+            a2.push(a[i]);
+        }
+        ;
+
+    }
+    document.write("dãy cũ là :"+ a +'<br>')
+    document.write("dãy mới là : " + a2);
+</script>
+</body>
+</html>

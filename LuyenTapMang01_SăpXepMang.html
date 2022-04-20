@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sắp xếp mảng</title>
+</head>
+<body>
+<script>
+    let a = new Array(10);
+    let max;
+    let temp;
+    for (let i = 0; i < 10; i++) {
+        a[i] = prompt("nhập phần tử thứ " + (i + 1) + ':');
+               }
+
+    for (let i=0;i<10;i++){
+        max=a[i];
+        for (let j =(i+1);j<10;j++){
+                if(max<a[j]){
+                    temp=a[i];
+                    a[i]=a[j];
+                    a[j]=temp;
+                }
+        }
+    }
+    document.write("dãy mới là : " + a);
+</script>
+
+</body>
+</html>
