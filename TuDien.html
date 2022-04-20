@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ Điển</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h2>Từ điển đơn giản Anh-Việt </h2>
+<form >
+    <input type="text" id="input">
+    <button type=button onclick="tracuu()">Tra Cứu</button>
+    <br><br>
+    Nghĩa : <p id="ketqua"></p>
+</form>
+<script>
+    let E = ["shadow", "light", "curse", "full", "stop"],
+        V = ["bóng tối", "ánh sáng", "lời nguyền", "đầy đủ,no", "dừng"];
+
+    function tracuu() {
+        check = true;
+        let value = document.getElementById("input").value;
+        for (let i = 0; i < E.length; i++) {
+            if (value == E[i]) {
+                document.getElementById("ketqua").innerHTML=(V[i]);
+                check = fasle;
+                break;
+            }
+        }
+        if (check) {
+            alert("không có nghĩa!");
+        }
+    }
+
+</script>
+</body>
+</html>
